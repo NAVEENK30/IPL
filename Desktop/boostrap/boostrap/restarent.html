@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<style>
+.navbar{
+    height: 50px;
+}
+.navbar-brand:hover{
+transform: scale(1.3);
+}
+.navbar a:hover
+{
+ background-color: orange;
+ color: black;
+ border-radius: 10px;
+
+}
+    .carousel-item img{
+height: 90vh;
+    }
+    #fir{
+        height: 100vh;
+        width: 100%;
+    }
+    .carousel-caption{
+        bottom: 20%;
+        z-index: 2;
+    }
+
+    .carousel-inner::before{
+        background: rgba(0,0,0,0.7);
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+      height: 100%;
+      content: '';
+      top: 0;left: 0;
+    }
+    .carousel-caption h1{
+        font-size:80px ;
+        margin-top: 0px;
+    }
+    .carousel-caption button{
+        margin-top: 0px;
+    }
+    #about{
+        width: 100%;
+        height: 90vh;
+    }
+    #thi{
+        width: 100%;
+        height: 80vh;
+        margin-top: 5%;
+    }
+   #thi button{
+        margin-left: 30%;
+    }
+    #thi button:hover{
+        background: none;
+        border: 3px solid orange;
+        color: black;
+    }
+    #thi .card:hover{
+        transform: scale(1.1);
+        transition-timing-function: ease-out;
+        box-shadow: 0 0 10px goldenrod;
+    }
+
+ 
+
+#forth{
+    width: 100%;
+    height: 80vh;
+}
+#forth h1{
+    font-weight: bolder;
+    font-size: 50px;
+   
+}
+#fifth{
+    width: 100%;
+    height: 90vh;
+}
+#fif{
+    width: 100%;
+    height: 90vh;
+}
+#fif input{
+
+    border: none;
+    border-bottom: 3px solid orange;
+}
+#fifth .card:hover{
+    background-color: bisque;
+    transform: scale(1.1);
+}
+
+</style>
+<body>
+    
+<div class="navbar navbar-expand-md" >
+    <div class="container-xl">
+        <h1 class="navbar-brand" style="font-size: 30px; font-weight: bolder;">
+<span class="text-warning">TOO</span> GOOD ! !
+
+        </h1>
+        <button class="navbar-toggler" data-bs-target="#show" data-bs-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="show">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Home <i class="bi bi-archive-fill"></i></a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Product</a></li>
+            <li class="nav-item"><a href="#"class="nav-link">About us</a></li></ul>
+            
+     
+        
+    </div>   
+   </div>
+  
+</div>
+<section id="fir">
+
+<div class="carousel slide" id="one">
+<div class="carousel-indicators">
+ <button type="button" data-bs-target="#one" data-bs-slide-to="0"  class="active">
+
+    </button>
+    <button type="button" data-bs-target="#one" data-bs-slide-to="1">
+        
+    </button>
+
+    <button type="button" data-bs-target="#one" data-bs-slide-to="2">
+        
+    </button>
+</div>
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+<img src="H1_RL_CRAYCRAFT.jpg" class="w-100 img-fluid">
+<div class="carousel-caption ">
+    <p class="fs-3 fw-bold ">Let's Start Our Lunch</p>
+    <h1 class="display-4">Spicy & Tasty</h1>
+    <button class="btn btn-warning mt-3">Order Now</button>
+</div>
+ </div>
+ <div class="carousel-item ">
+    <img src="H1_Swwing.jpg" class="w-100 img-fluid">
+    <div class="carousel-caption ">
+        <p class="display-4">Get Ready To Smash </p>
+        <h1 class="fs-3 fw-bold ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, exercitationem.</h1>
+        <button class="btn btn-warning mt-3">Order Now</button>
+    </div>
+     </div>
+     <div class="carousel-item ">
+        <img src="d0784b87e8cda2ab58ccc3aba709c807.avif" class="w-100 img-fluid">
+        <div class="carousel-caption ">
+            <p class="fs-3 fw-bold ">Make's Memory</p>
+            <h1 class="display-4">LOVE IT !!</h1>
+            <button class="btn btn-warning mt-3">Order Now</button>
+        </div>
+         </div>
+    </div>
+    <button class="carousel-control-prev" data-bs-target="#one" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon">
+
+        </span>
+    </button>
+    <button class="carousel-control-next" data-bs-target="#one" data-bs-slide="next">
+        <span class="carousel-control-next-icon">
+            
+        </span>
+    </button>
+</div></section>
+<section id="about" class="about section-padding">
+
+<div class="container">
+    <div class="row">
+     
+        <div class="col-md-6 col-sm-12 mb-5 mt-md-5">
+          
+            <img src="WhatsApp Image 2024-12-12 at 08.00.10_0cb3080d.jpg" class="w-80 img-fluid rounded">
+        </div>
+        <div class="col-md-6 col-sm-12 mb-5 mt-md-5">
+            <h2 class="">We Provide the Besy Qulity<br>Servuces Ever</h2>
+         <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, nulla.Numquam delectus aliquam libero et. Blanditiis, ducimus id. Ad quam commodi, voluptatibus impedit tempore minus sequi magni itaque architecto at, libero deleniti.
+        </p> 
+    <button class="btn btn-warning">Leran More</button></div>
+   
+</div>
+</div>
+</section>
+
+<section id="thi">
+
+<div class="container">
+<p class="fs-1 mt-4 mb-3 text-center fw-bold">Our Projects</p>
+    <div class="row justify-content-around mt-5">
+
+<div class="card col-4 col-sm-12 p-3" style="width: 300px;">
+    <div class="body">
+       <img src="H1_RL_CRAYCRAFT.jpg" class="card-img img-fluid">
+       <div class="title text-center">
+Building Make
+       </div>
+       <div class="text text-center">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, ratione.
+       </div>
+       <button class="btn btn-warning mt-2">Learn More</button>
+    </div>
+</div>
+<div class="card col-4 col-sm-12 p-3" style="width: 300px;">
+    <div class="body">
+       <img src="d0784b87e8cda2ab58ccc3aba709c807.avif" class="card-img img-fluid">
+       <div class="title text-center">
+Building Make
+       </div>
+       <div class="text text-center">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, ratione.
+       </div>
+       <button class="btn btn-warning mt-2">Learn More</button>
+    </div>
+</div>
+<div class="card col-4 col-sm-12 p-3" style="width: 300px;">
+    <div class="body">
+       <img src="H1_Swwing.jpg" class="card-img img-fluid">
+       <div class="title text-center">
+Building Make
+       </div>
+       <div class="text text-center">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, ratione.
+       </div>
+       <button class="btn btn-warning mt-2">Learn More</button>
+    </div>
+</div>
+    </div>
+
+
+</section>
+<!-- <section id="forth">
+
+    <p class="fs-1 mt-5 text-center">Our Services</p>
+    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis perspiciatis <br>at officia, repellat magni illum.</p>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-3 col-sm-12">
+                <div class="bg-dark p-3 mt-2" style="width: 350px;">
+<p class="fs-3 fw-bold text-white text-center">BEST QULITY</p>
+<p class="text-white text-center">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi voluptate quod eligendi omnis voluptatibus ratione.
+</p>
+<button class="btn btn-warning" style="margin-left: 30%;">Learn More</button>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="bg-dark p-3 mt-2" style="width: 350px;">
+<p class="fs-3 fw-bold text-white text-center">BEST QULITY</p>
+<p class="text-white text-center">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi voluptate quod eligendi omnis voluptatibus ratione.
+</p>
+<button class="btn btn-warning" style="margin-left: 30%;">Learn More</button>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="bg-dark p-3 mt-2" style="width: 350px;">
+<p class="fs-3 fw-bold text-white text-center">BEST QULITY</p>
+<p class="text-white text-center">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi voluptate quod eligendi omnis voluptatibus ratione.
+</p>
+<button class="btn btn-warning" style="margin-left: 30%;">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section id="forth">
+<h1 class="text-center   mt-5">Services</h1>
+<p class="text-center mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem temporibus numquam exercitationem nostrum <br>dolore nam libero consectetur officiis mollitia perferendis?</p>
+
+
+<div class="container">
+    <div class="row justify-content-around">
+        <div class="col-md-4">
+<div class="bg-dark text-center text-white p-3 rounded"  style="width: 350px;">
+    <h2>Best Qulity</h2>
+    <p>Lorem, ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aperiam?consectetur adipisicing elit. Natus, cupiditate.</p>
+    <button class="btn btn-warning">Leran More</button>
+</div>
+
+    </div>
+    <div class="col-md-4">
+        <div class="bg-dark text-center text-white p-3 rounded"  style="width: 350px;">
+            <h2>Sustainbility</h2>
+            <p>Lorem, ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aperiam?consectetur adipisicing elit. Natus, cupiditate.</p>
+            <button class="btn btn-warning">Leran More</button>
+        </div>
+        
+            </div><div class="col-md-4">
+                <div class="bg-dark text-center text-white p-3 rounded"  style="width: 350px;">
+                    <h2>Integrity</h2>
+                    <p>Lorem, ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aperiam?consectetur adipisicing elit. Natus, cupiditate.</p>
+                    <button class="btn btn-warning">Leran More</button>
+                </div></div>
+            
+                
+                    </div>
+</div>
+</section>
+
+<section id="fifth">
+
+    <h1 class="text-center   mt-5">Our teams</h1>
+    <p class="text-center mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem temporibus numquam exercitationem nostrum <br>dolore nam libero consectetur officiis mollitia perferendis?</p>
+    
+<div class="container"><div class="row">
+
+    <div class="col-md-3 col-sm-12">
+        <div class="card">
+
+            <div class="card-body">
+                <img src="9c16bf510deb82fadb576c6da7a86282.jpg" class="img-fluid card-img mb-2" style="border-radius: 50%; width: 100px; height: 100px; margin-left: 30%;">
+                <div class="card-title text-center fw-bold">
+                       Rabit
+                </div>
+                <div class="card-text text-center">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius itaque unde asperiores voluptatibus. Quibusdam.
+                </div>
+            </div>
+        </div>
+     
+    </div>
+    <div class="col-md-3 col-sm-12">
+        <div class="card">
+
+            <div class="card-body">
+                <img src="990ceb05c8ccc6d7fb03647b006c3d43.jpg" class="img-fluid card-img mb-2" style="border-radius: 50%; width: 100px; height: 100px; margin-left: 30%;">
+                <div class="card-title text-center fw-bold">
+                        Mickey
+                </div>
+                <div class="card-text text-center">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius itaque unde asperiores voluptatibus. Quibusdam.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-12">
+        <div class="card">
+
+            <div class="card-body">
+                <img src="67246c540cef5ddc27ff4c11b6223e84.jpg" class="img-fluid card-img mb-2" style="border-radius: 50%; width: 100px; height: 100px; margin-left: 30%;">
+                <div class="card-title text-center fw-bold">
+                        Pinkey
+                </div>
+                <div class="card-text text-center">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius itaque unde asperiores voluptatibus. Quibusdam.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-12">
+        <div class="card">
+
+            <div class="card-body">
+                <img src="02653700a8f17741b72b5d3728182f2e.jpg" class="img-fluid card-img mb-2" style="border-radius: 50%; width: 100px; height: 100px; margin-left: 30%;">
+                <div class="card-title text-center fw-bold">
+                        Jack Willson
+                </div>
+                <div class="card-text text-center">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius itaque unde asperiores voluptatibus. Quibusdam.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+</div>
+</section>
+<section id="fif">
+<p class="fs-1 text-center fw-bold mb-2">
+Further Details
+</p>
+<p class="text-center mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore vero <br>reiciendis laudantium a tempora accusantium maiores ab qui atque dicta.</p>
+<div class="container">
+
+<form class="m-2">
+    <div class="form-floating">
+<input type="text" class="form-control m-2" placeholder="Full name">
+<label for="">Fisrt Name</label>
+</div>
+<div class="form-floating">
+<input type="email" class="form-control m-2" placeholder="Email">
+<label for="">email</label>
+</div>
+<div class="floating">
+<textarea class="form-control m-2" placeholder="Message">
+    <label for="">Message</label>
+
+</textarea>
+
+</div>
+<button class="btn btn-warning form-control">Send Now</button>
+</form>
+</div>
+</section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+
+</head>
+<style>
+    .navbar
+    {
+        box-shadow: 0 0 30px black;
+        background-image: linear-gradient(45deg,rgba(0, 255, 51, 0.6),rgba(155, 235, 35, 0.5));
+     
+    }
+.navbar-brand
+{
+
+color: white;    
+text-shadow: 0 0 20px rgb(241, 14, 14);
+font-weight: bold;
+}
+    .nav-item a:hover{
+text-decoration: underline;
+color: rgb(17, 0, 255);
+border-radius: 10px;
+text-shadow: 0 0 10px goldenrod;
+    }
+    .carousel-item img{
+    width: 100%;
+    height: 90vh;
+}
+.carousel-item::before{
+content: "";
+position: absolute;
+background-color: black;
+z-index: 1;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+opacity: 0.7;
+
+}
+.carousel-caption{
+    z-index: 2;
+margin-bottom:10% ;
+}
+.carousel-caption h2{
+    text-shadow: 0 0 10px greenyellow;
+    font-size: 70px;
+}
+
+
+#co{
+    margin-top: 10%;
+    box-shadow: 0 0 20px greenyellow;
+}
+.com{
+    margin-top: 10%;
+}
+.com img{
+  
+    height: 170px;
+    background-size: fit-content;
+    width: 100%;
+    background: none;
+    
+}
+
+.com button{
+    background: none;
+    border: none;
+
+    border-bottom: 3px solid green;
+    color: white;
+   margin-left: 70%;
+   margin-top: 5%;
+   text-shadow: 0 0 10px red;
+}
+.com .card:hover{
+transform: scale(1.1);
+z-index: 1;
+position: absolute;
+box-shadow: 0 0 10px blueviolet;
+color: white;
+font-weight: 400;
+background-image: url(WhatsApp\ Image\ 2024-12-25\ at\ 00.57.59_9a2dcd2c.jpg);
+}
+
+
+.about{
+    margin-top: 10%;
+}
+
+
+
+.gal img{
+   
+   height: 200px;
+   width: 100%;
+  margin: 10px 10px ;
+}
+.gal{
+    width: 100%;
+margin-bottom: 10%;
+}
+
+
+.team img
+{
+
+
+height: 120px;
+width: 170px;
+border-radius: 0 10px 0 10px;
+box-shadow: 0 0 5px red;
+}
+
+
+
+.team .card:hover{
+    transform: scale(1.1);
+
+background-color:papayawhip;
+
+box-shadow: 0 0 20px rgb(243, 43, 243);
+    }
+    .team .card-text:hover{
+      
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 15px;
+    }
+    .team .card-text{
+      
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size:smaller ;
+  }
+
+  .sup{
+    margin-top: 10%;
+  }
+.sup h1{
+text-shadow: 0 0 10px yellow;
+
+}
+.sup span{
+    text-shadow: 0 0 10px red;
+}
+.sup img{
+    border-radius: 10px;
+}
+
+.sup .col{
+    border-radius: 10px;
+}
+/* .accordion{
+    width: 50%;
+    margin: 10px;
+display: flex;
+flex-direction: column;
+margin-left: 20%;
+   
+  
+} */
+ .faq{
+
+    margin-bottom: 5%;
+ }
+.accordion-item{
+    margin-bottom: 10px;
+}
+.dia img{
+  height: 200px;
+}
+.com{
+   
+    z-index: 1;
+    position: relative;
+ 
+}
+
+.opac{
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(0, 0, 0);
+  opacity: 0.8;
+position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.to{
+    z-index: 3;
+    position: absolute;
+    top: 30%;
+    display: none;
+}
+.to img{
+    width: 200px;
+    height: 300px;
+
+}
+.to h1{
+    color: white;
+}
+.to p{
+    color: white;
+}
+.sec {
+    z-index: 3;
+    position: absolute;
+    top: 30%;
+    display: none;
+}
+.sec img{
+    width: 200px;
+    height: 300px;
+
+}
+.sec h1{
+    color: white;
+}
+.sec p{
+    color: white;
+}
+.blu {
+    z-index: 3;
+    position: absolute;
+    top: 30%;
+    display: none;
+}
+.blu img{
+    width: 200px;
+    height: 300px;
+
+}
+.blu h1{
+    color: white;
+}
+.blu p{
+    color: white;
+}
+
+.sec p{
+    color: white;
+}
+.ggsm {
+    z-index: 3;
+    position: absolute;
+    top: 30%;
+    display: none;
+}
+.ggsm img{
+    width: 200px;
+    height: 300px;
+
+}
+.ggsm h1{
+    color: white;
+}
+.ggsm p{
+    color: white;
+}
+
+.sens {
+    z-index: 3;
+    position: absolute;
+    top: 30%;
+    display: none;
+}
+.sens img{
+    width: 200px;
+    height: 300px;
+
+}
+.sens h1{
+    color: white;
+}
+
+.sens p{
+    color: white;
+}
+
+.moto {
+    z-index: 3;
+    position: absolute;
+    top: 30%;
+    display: none;
+}
+.moto img{
+    width: 200px;
+    height: 300px;
+
+}
+.moto h1{
+    color: white;
+}
+.moto p{
+    color: white;
+}
+
+.dia{
+
+    margin-top: 7%;
+
+}
+.dia #ii{
+    height: 400px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+footer p{
+    font-size: small;
+    color: azure;
+}
+footer h1{
+    text-shadow: 0 0 20px rgb(225, 65, 140);
+
+}
+.cose{
+ 
+    margin-bottom: 10%;
+    background: linear-gradient(45deg,red,greenyellow);
+   
+}
+.cose p{
+    font-size: smaller;
+  
+    font-weight: bold;
+
+}
+.cost{
+    margin-bottom: 10%;
+}
+</style>
+
+<body>
+    <div class="navbar navbar-expand-md">
+        <div class="container-xl">
+
+            <h1 class="navbar-brand">Project<icon class="bi bi-book text-dark ms-2 fs-"></icon> <span class="text-warning" style="text-shadow: 0 0 black;">BCA</span> </h1>
+
+<button class="navbar-toggler" data-bs-target="#naa" data-bs-toggle="collapse">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+
+            <div class="collapse navbar-collapse justify-content-end" id="naa">
+                <ul class="navbar-nav">
+                    <li><a href="https://www.egspec.org/"><img src="egspec_logo.png" class="img-fluid" style="width: 40px;"></a></li>
+                    <li class="nav-item"><a href="https://www.egspec.org/" class="nav-link fw-bold">E.G.S Pillay Group On Institution
+                   </a></li>
+                  
+                    <!-- <li class="nav-item"><a href="#" class="nav-link">Componants<icon class="bi bi-"></icon></a></li>
+                   <li class="nav-item"><a href="#" class="nav-link">Squad</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Support</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+<div class="carousel slide" id="one">
+    <div class="carousel-indicators">
+        <button class="active" data-bs-target="#one" data-bs-slide-to="0"></button>
+        <button class="active" data-bs-target="#one" data-bs-slide-to="1"></button>
+        <button class="active" data-bs-target="#one" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+       
+        <div class="carousel-item active">
+            <img src="WhatsApp Image 2024-12-25 at 00.57.57_e2ad4f74.jpg" class="img-fluid w-100" >
+            <div class="carousel-caption">
+                <h2 class="sm-d-block">Soil Moisture Detector <icon class="bi bi-search-heart "></icon></h2>
+                <p>        The Soil Moisture Detection System uses an Arduino, GSM module, and MIT App Inventor to provide real-time monitoring of soil moisture levels. </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="WhatsApp Image 2024-12-25 at 00.57.58_0513e96c.jpg"  class="img-fluid w-100">
+            <div class="carousel-caption">
+                <h2>Power OF GSM Module <icon class="bi bi-modem"></icon></h2>
+                <p>A GSM module or a GPRS module is a chip or circuit that is used to establish communication between a mobile device or a computing machine and a GSM or GPRS system.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="WhatsApp Image 2024-12-25 at 00.58.01_c00b3660.jpg" class="img-fluid w-100" alt="">
+            <div class="carousel-caption">
+                <h2>The Born OF Applicaion <icon class="bi bi-power"></icon> </h2>
+                <p>A simple mobile application can be developed using platforms like MIT App Inventor or Arduino-compatible apps, allowing users to view current moisture levels and control irrigation remotely.</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" data-bs-target="#one" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    
+    <button class="carousel-control-next" data-bs-target="#one" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<section class="about">
+
+<h1 class="fs-1 text-center mb-5 mt-3 fw-bold">Summary <icon class="bi bi-clipboard2-check"></icon>
+</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6"><img src="WhatsApp Image 2024-12-25 at 00.57.57_e8f43272.jpg" class="img-fluid" id="co"></div>
+        <div class="col-md-6">
+        <h1 class="fs-2 text-center mb-3 mt-5">IOT Based Soil Moisture Detecor <i class="bi bi-droplet-fill text-info"></i></h1> 
+        <span class="mb-3 mt-3 text-success ms-4">Into The Green  <i class="bi bi-door-open"></i></span>   
+        <p class="mb-5 mt-3 text-justify">  This project aim to develop a <b>Soil Moisture Dedection System using Arduino  a soil moisture secnsor & a GSM Module </b>communication with a custom -built Mobile Application created using <b>MIT APP INVENTOR</b>.The system measures soil moiture levels and transmits the data to the mobile application,ensuring effective irrigation management.</p>
+        </div>
+    </div>
+</div>
+</section>
+<section class="com">
+
+<div class="opac">
+
+
+</div>
+<div class="to">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+<img src="76877787-58c7-5e8e-9c2c-c577678b404a.jpg" class="img-fluid w-100 rounded">
+        </div>
+        <div class="col-md-6">
+            <h1 class="fs-1 text-center mb-5 fw-bold text-white">ARDUINO UNO</h1>
+            <p class="mt-5 text-white">The Arduino microcontroller processes data from the soil moisture sensor and controls other components, such as the relay and GSM module. It enables automated irrigation based on soil conditions and allows for easy programming and adjustments.</p>
+
+<button id="dd">Back</button>
+        </div>
+    </div>
+</div>
+</div>
+<div class="sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+    <img src="download (5).jpeg" class="img-fluid w-100 rounded">
+            </div>
+            <div class="col-md-6">
+                <h1 class="fs-1 text-center mb-5 fw-bold">RELAY MODULE</h1>
+                <p class="mt-5">The relay module acts as a switch that controls the water pump. When the soil moisture level drops below a set threshold, the Arduino activates the relay to turn on the pump, automating the irrigation process.</p>
+   <button id="out">Back</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="blu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+        <img src="images (4).jpeg" class="img-fluid w-100 rounded">
+                </div>
+                <div class="col-md-6">
+                    <h1 class="fs-1 text-center mb-5 fw-bold">BLUETOOTH MODULE</h1>
+                    <p class="mt-5">
+
+                        The HC-05 Bluetooth module is a popular, affordable, and widely-used Bluetooth v2.0 + EDR module. It operates on a 3.3V or 5V power supply and has a range of up to 100 meters. The module can be used for wireless communication between two devices, such as connecting a microcontroller to a smartphone or computer. </p>
+        <button id="ddd">Back</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+        <div class="sens">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+            <img src="download (4).jpeg" class="img-fluid w-100 rounded">
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="fs-1 text-center mb-5 fw-bold">SOIL SENSOR</h1>
+                        <p class="mt-5">The soil moisture sensor measures the volumetric water content in the soil by detecting electrical conductivity. It provides real-time data to determine when irrigation is needed, helping to conserve water and enhance plant health.</p>
+                        <button id="dddd">Back</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="ggsm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                <img src="gsm900a-gprs-module.png" class="img-fluid w-100 rounded">
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="fs-1 text-center mb-5 fw-bold">GSM MODULE</h1>
+                            <p class="mt-5">A GSM module or a GPRS module is a chip or circuit that is used to establish communication between a mobile device or a computing machine and a GSM or GPRS system.</p>
+                            <button id="ddddd">Back</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="moto">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                    <img src="51j3SvJQ7ZL._AC_UF1000,1000_QL80_.jpg" class="img-fluid w-100 rounded">
+                            </div>
+                            <div class="col-md-6">
+                                <h1 class="fs-1 text-center mb-5 fw-bold">WATER PUMP</h1>
+                                <p class="mt-5">A water pump motor is an electric or diesel-powered motor used to pump water in various applications, such as irrigation systems, water treatment plants, and residential water supply systems. These motors are designed to provide a reliable and efficient means of moving water, often in high-pressure and high-volume applications.</p>
+                                <button id="ut">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    <h1 class="text-center fw-bold mb-5">Project Componants <icon class="bi bi-box-fill" style="color: burlywood;"></icon></h1>
+<div class="container">
+
+    <div class="row justify-content-around mt-5">
+        <div class="col-md-3 m-2">
+            <div class="card"  style="width: 300px;"  id="bbb">
+                <div class="card-body">
+                    <img src="76877787-58c7-5e8e-9c2c-c577678b404a.jpg"  class="card-img img-fluid">
+                    <div class="card-title" >
+        <p class="fs-2 text-center ">Arduino UNO</p>
+                    </div>
+                    <div class="card-text">
+      
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="col-md-3 m-2">
+            <div class="card"  style="width: 300px;" id="seco">
+                <div class="card-body">
+                    <img src="download (5).jpeg"  class="card-img img-fluid">
+                    <div class="card-title">
+                        <p class="fs-2 text-center">Relay Module</p>
+                    </div>
+                    <div class="card-text">
+        
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="col-md-3 m-2">
+            <div class="card"  style="width: 300px;" id="bt">
+                <div class="card-body">
+                    <img src="images (4).jpeg"  class="card-img img-fluid">
+                    <div class="card-title">
+                        <p class="fs-2 text-center text-dark">BT Module</p>
+                    </div>
+                    <div class="card-text">
+        
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="col-md-3 m-2">
+            <div class="card"  style="width: 300px;" id="sen">
+                <div class="card-body">
+                    <img src="download (4).jpeg"  class="card-img img-fluid">
+                    <div class="card-title">
+                        <p class="fs-2 text-center">Soil Sensor</p>
+                    </div>
+                    <div class="card-text">
+        
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="col-md-3 me-2">
+            <div class="card"  style="width: 300px;" id="gsm">
+                <div class="card-body">
+                    <img src="gsm900a-gprs-module.png"  class="card-img img-fluid">
+                    <div class="card-title">
+                        <p class="fs-2 text-center">GSM Module</p>
+                    </div>
+                    <div class="card-text">
+        
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="col-md-3 me-2">
+            <div class="card"  style="width: 300px;" id="mot">
+                <div class="card-body">
+                    <img src="51j3SvJQ7ZL._AC_UF1000,1000_QL80_.jpg"  class="card-img img-fluid">
+                    <div class="card-title">
+                        <p class="fs-2 text-center">Water Pump</p>
+                    </div>
+                    <div class="card-text">
+        
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+       
+    
+    </div>
+</div>
+
+
+
+    </section>
+
+
+<section class="dia">
+
+<p class="fs-1 mt-5 mb-5 text-center fw-bold">Project Diagram <icon class="bi bi-diagram-3 text-success"></icon></p>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="Simple-Soil-Moisture-Detector-Circuit-diagram.png" class="img-fluid w-100" alt="">
+        </div>
+        <div class="col-md-6">
+            <img src="SoilMoistureLevelCircuit.png" class="img-fluid w-100" alt="">
+        </div>
+        <div class="col-md-12">
+            <img src="arduino-nano-esp32-soil-moisture-sensor-pump-wiring-diagram.jpg" class="img-fluid w-100" id="ii">
+        </div>
+    </div>
+</div>
+
+
+</section>
+
+
+<section class="cose">
+<p class="fs-1 text-center mt-3 mb-5">Code <icon class="bi bi-code"</p>
+    <div class="container">
+        <div class="row"><div class="col-md-6">
+
+<p class=" fs-small ms-5">
+    #include /SoftwareSerial.h/ <br>
+        const int sensorPin = A0; <br>       
+        const int pumpPin = 7;     <br>    
+        const int bluetoothTx = 10; <br>
+        const int bluetoothRx = 11; <br>
+        
+ <br>
+        SoftwareSerial bluetooth(bluetoothTx, bluetoothRx); <br>
+        
+        void setup() { <br>
+       
+            Serial.begin(9600);    <br>     
+       <br>
+            pinMode(pumpPin, OUTPUT); <br>
+            digitalWrite(pumpPin, HIGH);  <br>
+         <br>
+            Serial.println("System Initialized"); <br>
+            bluetooth.println("Bluetooth Connected");
+        }
+         <br>
+        void loop() { <br>
+ <br>
+            int sensorValue = analogRead(sensorPin); <br>
+            
+            <br>
+            float moisturePercentage = (100.0 - (sensorValue / 10.23));  <br>
+            
+          <br>
+            Serial.print("Moisture Percentage: "); <br>
+            Serial.print(moisturePercentage); <br>
+            Serial.println("%"); <br>
+         <br>
+</p>
+
+        </div>
+        <div class="col-md-6">
+
+            <p class="ms-5 fw-small">
+              
+                       
+                        bluetooth.print("Moisture Percentage: "); <br>
+                        bluetooth.print(moisturePercentage); <br>
+                        bluetooth.println("%"); <br>
+                     <br>
+      
+                        if (bluetooth.available()) { <br>
+                            String command = bluetooth.readStringUntil('\n'); <br>
+                   
+                            if (command == "PUMP_ON") { <br>
+                                digitalWrite(pumpPin, LOW);    <br>  
+                                bluetooth.println("Pump: ON"); <br>
+                                Serial.println("Pump: ON"); <br>
+                            } else if (command == "PUMP_OFF") { <br>
+                                digitalWrite(pumpPin, HIGH);     <br>    
+                                bluetooth.println("Pump: OFF"); <br>
+                                Serial.println("Pump: OFF"); <br>
+                            } else { <br>
+                                bluetooth.println("Invalid Command"); <br>
+                            } <br>
+                        } <br>
+                        delay(2000); <br>
+                    } <br>
+            </p>
+            
+                    </div>
+    </div>
+    </div>
+</section>
+
+
+
+
+<section class="cost">
+
+<p class="text-center fw-bold fs-1">Project Cost <icon class="bi bi-coin text-warning"></icon></p>
+<div class="container">
+
+<div class="row">
+<div class="col-md-6">
+<p class="text-center mt-5 mb-5 fw-bold">Present Project Level Cost</p>
+<div class="card">
+<img src="Screenshot 2024-12-27 010750.png" class="card-img img-fluid">
+</div>
+
+</div>
+<div class="col-md-6">
+<p class="text-center mt-5 mb-5 fw-bold">Advance Project Level Cost</p>
+<div class="card">
+<img src="Screenshot 2024-12-26 152012.png" class="card-img img-fluid">
+</div>
+
+</div>
+
+<!-- <input type="text" id="input" placeholder="0">
+<div>
+    <button>AC</button>
+    <button>C</button>
+    <button>%</button>
+    <button>*</button>
+</div>
+<div>
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>-</button>
+</div>
+<div>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>+</button>
+</div>
+<div>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>/</button>
+</div>
+<div>
+    <button>00</button>
+    <button>0</button>
+    <button>.</button>
+    <button>=</button>
+</div> -->
+
+</div>
+</div> 
+
+
+</section>
+
+<section class="team">
+
+
+<p class="fs-1 mt-3 mb-5 text-center fw-bold">Our Squad  <icon class="bi bi-microsoft-teams text-primary"></icon></p>
+
+
+<div class="container">
+    <div class="row d-flex justify-content-around">
+        <div class="col-md-3">
+
+            <div class="card" style="width: 250px;">
+                <div class="card-body">
+                    <img src="WhatsApp Image 2024-12-12 at 08.00.09_2cdc4b7e.jpg" class="img-fluid card-img">
+                    <div class="card-title text-end fs-3 fw-bold" style="text-decoration: underline;">
+Navin <icon class="bi bi-emoji-sunglasses"></icon>
+                    </div>
+                    <div class="card-text">
+
+                       <h1 class="fs-3">Leader </h1> 
+                        <p>Oversee the project,make key decisions, coordinate the team.</p> 
+
+
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+
+            <div class="card" style="width: 250px;">
+                <div class="card-body">
+                    <img src="WhatsApp Image 2024-12-12 at 08.00.10_0cb3080d.jpg" class="img-fluid card-img">
+                    <div class="card-title text-end fs-3 fw-bold" style="text-decoration: underline;">
+Raja <icon class="bi bi-emoji-wink"></icon>
+                    </div>
+                    <div class="card-text">
+
+                       <h1 class="fs-3"> Ass.Leader</h1>
+                       <p>Assist with management  and step in when needed.
+                    </p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+
+            <div class="card" style="width: 250px;">
+                <div class="card-body">
+                    <img src="WhatsApp Image 2024-12-12 at 08.00.11_7dbc8e9d.jpg" class="img-fluid card-img">
+                    <div class="card-title text-end fs-3 fw-bold" style="text-decoration: underline;">
+Kaviya <icon class="bi bi-emoji-grin"></icon>
+                    </div>
+                    <div class="card-text">
+
+                        <h1 class="fs-3">Paperwork </h1>
+                        <p> Handle documentation, reports, and track project progress.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+
+            <div class="card" style="width: 250px;">
+                <div class="card-body">
+                    <img src="WhatsApp Image 2024-12-25 at 00.57.58_0513e96c.jpg" class="img-fluid card-img ">
+                    <div class="card-title text-end fs-3 fw-bold" style="text-decoration: underline;">
+Sameem <icon class="bi bi-emoji-laughing"></icon>
+                    </div>
+                    <div class="card-text">
+<h1 class="fs-3">Member</h1>
+<p class="">Contribute to research,develop, and trobleshooting as needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+<section class="sup">
+
+<p class="fs-1 mt-3 mb-5 text-center fw-bold">Our <icon class="bi bi-person-fill text-danger"></icon> Support </p>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 mb-5 col-sm-3 ">
+
+
+            <div class=" d-flex justify-content-between bg-secondary p-3 rounded  sd-d-block" >
+
+              <img src="images.jpg" class="img-fluid" style="width: 320px; height: 150px;">
+            <h1 class="ms-5 fs-2 fw-bold">R & d Cell<span class="text-warning"> Mishra</span></h1>
+               
+        <p class="m-5 text-white">Helping to grow the project to an advanced level by providing expert guidance and insights.</p>
+              
+               
+            </div>
+        </div>
+        <div class="col-md-12 mb-5">
+
+
+            <div class=" d-flex justify-content-between bg-secondary p-3 rounded" >
+
+                <img src="image-2024-12-3aa2109b2a4fb6017aff77c1d0f86293.avif" class="img-fluid" style="width: 300px; height: 150px;">
+                <h1 class="ms-5 fs-2 fw-bold">H O D <span class="text-warning"> Manivannan</span></h1>
+               
+                <p class="m-5 text-white"> Providing significant guidance and resources for the project at a larger level.
+                </p>
+              
+               
+            </div>
+        </div>
+        <div class="col-12 mb-1">
+
+
+            <div class=" d-flex justify-content-between bg-secondary p-3 rounded" >
+
+                <img src="17079041950.png" class="img-fluid" style="width: 340px; height: 150px;">
+                <h1 class="ms-5 fs-2 fw-bold">INCHARGE<span class="text-warning"> Sathiyavani</span></h1>
+               
+                <p class="m-5 text-white"> Offering support and supervision, ensuring the project's alignment with academic goals.
+                </p>
+              
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+</p>
+
+
+</section>
+<section class="faq">
+    <p class="fs-1 mt-5 mb-5 text-center fw-bold">FAQ <icon class="bi bi-question"</p>
+<div class="accordion">
+
+    <div class="accordion-item">
+
+        <h1 class="accordion-header">
+            
+            <button class="accordion-button" data-bs-target="#cola" data-bs-toggle="collapse">What is the main objective of the soil moisture project ? </button></h1>
+        
+
+        <div class="accordion-body">
+            <div class="collapse accordion-collapse" id="cola">
+<p>The project aims to develop an automated system to monitor and control soil moisture levels, enhancing agricultural efficiency and promoting water conservation.
+
+</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item">
+
+        <h1 class="accordion-header">
+            
+            <button class="accordion-button" data-bs-target="#col" data-bs-toggle="collapse"> What is the expected budget for the project?
+            </button></h1>
+        
+
+        <div class="accordion-body">
+            <div class="collapse accodion-collapse" id="col">
+<p>The initial model project costs ₹3160, with plans for an advanced version that may cost ₹16,000 for further development.
+
+</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="accordion-item">
+
+        <h1 class="accordion-header">
+            
+            <button class="accordion-button" data-bs-target="#coo" data-bs-toggle="collapse">How will the project help in the agricultural sector?
+            </button></h1>
+        
+
+        <div class="accordion-body">
+            <div class="collapse accodion-collapse" id="coo">
+<p>
+    By automating soil moisture monitoring, the system can ensure optimal water usage, improve crop yield, and reduce human error, making farming more sustainable.
+    </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item">
+
+        <h1 class="accordion-header">
+            
+            <button class="accordion-button" data-bs-target="#c" data-bs-toggle="collapse">Can soil moisture sensors be integrated with existing irrigation systems?
+            </button></h1>
+        
+
+        <div class="accordion-body">
+            <div class="collapse accodion-collapse" id="c">
+<p>Yes, many soil moisture sensors can be integrated with automated irrigation systems. This integration allows for real-time data-driven irrigation decisions, enhancing efficiency and crop health. 
+    </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item ">
+
+        <h1 class="accordion-header">
+            
+            <button class="accordion-button" data-bs-target="#colaa" data-bs-toggle="collapse">What is the expected lifespan of a soil moisture sensor?
+            </button></h1>
+        
+
+        <div class="accordion-body">
+            <div class="collapse accordion-collapse" id="colaa">
+<p>The lifespan varies depending on the sensor type and environmental conditions. With proper maintenance, many sensors can function effectively for several years. Regular checks and calibration are recommended to maintain accuracy over time.</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+</section>
+
+<section class="gal">
+    <h1 class="text-center  fw-bold">Greeny Gallery <icon class="bi bi-balloon text-success"</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8"><img src="WhatsApp Image 2024-12-25 at 00.58.01_302882e8.jpg" class="img-fluid" ></div>
+        <div class="col-md-4"><img src="WhatsApp Image 2024-12-25 at 00.58.00_368ed236.jpg" class="img-fluid"></div>
+     </div>
+     <div class="row">
+        <div class="col-md-3"><img src="WhatsApp Image 2024-12-25 at 00.58.00_462d2d93.jpg" class="img-fluid" ></div>
+        <div class="col-md-6"><img src="WhatsApp Image 2024-12-25 at 00.58.01_c00b3660.jpg" class="img-fluid"></div>
+        <div class="col-md-3"><img src="WhatsApp Image 2024-12-25 at 00.57.59_9a2dcd2c.jpg" class="img-fluid"></div>
+     
+          </div>
+          <div class="row">
+            <div class="col-md-12"><img src="WhatsApp Image 2024-12-25 at 00.57.57_e2ad4f74.jpg" class="img-fluid" ></div>
+           
+              </div>
+</div>
+
+
+</section>
+<footer >
+<div style="width: 100%; height: 300px ; " class="bg-secondary pt-5">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-3 ">
+                <h1 class="text-white fs-2 fw-bold mb-3">TEAM</h1>
+                <p>Navin - Team Leader</p>
+                <p>Raja - Ass. TL</p>
+                <p>Kaviya - Paper Work</p>
+                <p>Sameem - Helper</p>
+            </div>
+            <div class="col-md-3">
+                <h1 class="text-white fs-2 fw-bold mb-3">Support</h1>
+                <p>Mishra -R & D</p>
+                <p>Manivannan - HOD</p>
+                <p>Sathiyavani - INCHARGE</p>
+              
+            </div>
+            <div class="col-md-6">
+               
+            
+            <h1 class="text-white fs-2 fw-bold mb-3">E.G.S pillay arts & Science College</h1>
+            <p class="text-white fs-5 fw-bold mb-1">Afflicated Bharathidasasn University ,Thiruchirappalli</p>
+            <p class="text-white fw-bold">Naqore Post, Nagapattinam - 611 002 , Tamil Nadu</p>
+            <p class="text-white fw-bold mt-3">Follow's</p>
+            <icon class="bi bi-instagram"></icon>&emsp;<icon class="bi bi-facebook"></icon>&emsp;<icon class="bi bi-youtube"></icon>&emsp;<icon class="bi bi-twitter"></icon>
+            
+        </div>
+        </div>
+    </div>
+    
+</div>
+</footer>
+
+
+</body>
+
+
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+
+
+var input=document.getElementById("input")
+var buttons=document.querySelectorAll("button")
+
+var string="";
+
+var arr=Array.from(buttons)
+
+
+arr.forEach(buttons=>{
+buttons.addEventListener('click',(e)=>{
+
+    if(e.target.innerHTML == '='){
+        string=eval(string)
+        input.value=string;
+    }
+
+    else if(e.target.innerHTML == 'AC'){
+        string="";
+        input.value=string;
+    }
+    else if(e.target.innerHTML == "C"){
+        string=string.substring(0,string.length-1)
+        input.value=string;
+    }
+
+    else{
+        string +=e.target.innerHTML
+        input.value=string;
+    }
+})
+
+})
+
+var opacity=document.querySelector(".opac");
+var content=document.querySelector(".to")
+var second =document.querySelector(".sec")
+var blue=document.querySelector(".blu")
+var sensor=document.querySelector(".sens")
+var gmod =document.querySelector(".ggsm")
+var motor=document.querySelector(".moto")
+
+
+
+bbb.addEventListener("click",function(){
+
+opacity.style.display="block";
+content.style.display="block";
+})
+seco.addEventListener("click",function(){
+
+opacity.style.display="block";
+second.style.display="block";
+})
+bt.addEventListener("click",function(){
+
+opacity.style.display="block";
+blue.style.display="block";
+})
+
+sen.addEventListener("click",function(){
+
+opacity.style.display="block";
+sensor.style.display="block";
+})
+gsm.addEventListener("click",function(){
+
+opacity.style.display="block";
+gmod.style.display="block";
+})
+mot.addEventListener("click",function(){
+
+opacity.style.display="block";
+motor.style.display="block";
+})
+
+
+out.addEventListener("click",function(){
+    opacity.style.display="none";
+    second.style.display="none";
+
+})
+
+ut.addEventListener("click",function(){
+    opacity.style.display="none";
+   motor.style.display="none";
+
+})
+dd.addEventListener("click",function(){
+    opacity.style.display="none";
+  content.style.display="none";
+
+})
+ddd.addEventListener("click",function(){
+    opacity.style.display="none";
+ blue.style.display="none";
+
+})
+dddd.addEventListener("click",function(){
+    opacity.style.display="none";
+   sensor.style.display="none";
+
+})
+ddddd.addEventListener("click",function(){
+    opacity.style.display="none";
+   gmod.style.display="none";
+
+})
+</script>
+</html>
