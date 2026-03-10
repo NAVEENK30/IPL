@@ -1,0 +1,67 @@
+Here are the exact names you need to use for your images (e.g., "Virat Kohli.jpg").
+
+--- BATSMEN (Top 20) ---
+Virat Kohli
+Rohit Sharma
+Shubman Gill
+Yashasvi Jaiswal
+Ruturaj Gaikwad
+Suryakumar Yadav
+Rinku Singh
+Shreyas Iyer
+Sai Sudharsan
+Tilak Varma
+Rajat Patidar
+Shivam Dube
+David Warner
+Steve Smith
+Kane Williamson
+Joe Root
+Faf du Plessis
+Glen Phillips
+Harry Brook
+Dawid Malan
+Jason Roy
+Finn Allen
+Devon Conway
+Rachin Ravindra
+Daryl Mitchell
+
+--- WICKETKEEPERS (Top 10) ---
+MS Dhoni
+Rishabh Pant
+Sanju Samson
+KL Rahul
+Ishan Kishan
+Jos Buttler
+Quinton de Kock
+Phil Salt
+Jonny Bairstow
+Heinrich Klaasen
+
+--- ALL-ROUNDERS (Top 10) ---
+Hardik Pandya
+Ravindra Jadeja
+Axar Patel
+Glenn Maxwell
+Cameron Green
+Marcus Stoinis
+Mitchell Marsh
+Andre Russell
+Sunil Narine
+Liam Livingstone
+
+--- BOWLERS (Top 10) ---
+Jasprit Bumrah
+Mohammed Shami
+Mohammed Siraj
+Kuldeep Yadav
+Yuzvendra Chahal
+Trent Boult
+Tim Southee
+Kagiso Rabada
+Anrich Nortje
+Lungi Ngidi
+
+--- 
+Note: The image file must correspond exactly to these names. For example: "Virat Kohli.jpg"

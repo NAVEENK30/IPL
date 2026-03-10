@@ -1,0 +1,106 @@
+/* ... existing styles ... */
+
+/* Category Slide View */
+.category-slide-view {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    animation: zoomIn 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.category-slide-view.active {
+    display: flex;
+}
+
+.main-cat-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    text-shadow: 0 0 30px var(--primary-color);
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+    line-height: 1;
+}
+
+.sub-cat-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    opacity: 0.8;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-cat-title {
+        font-size: 4rem;
+    }
+
+    .sub-cat-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* --- Category Animations --- */
+.cat-anim-container {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.6));
+}
+
+.cat-anim-svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+/* Keyframes */
+@keyframes batSwing {
+    0% { transform: rotate(-5deg) translateY(0); }
+    50% { transform: rotate(5deg) translateY(-10px); }
+    100% { transform: rotate(-5deg) translateY(0); }
+}
+
+@keyframes ballSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes glovePulse {
+    0%, 100% { transform: scale(1); opacity: 0.9; }
+    50% { transform: scale(1.1); opacity: 1; }
+}
+
+@keyframes allRoundRotate {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.anim-bat { animation: batSwing 3s ease-in-out infinite; transform-origin: bottom center; }
+.anim-ball { animation: ballSpin 4s linear infinite; transform-origin: center; }
+.anim-gloves { animation: glovePulse 2s ease-in-out infinite; }
+.anim-allround { animation: allRoundRotate 4s ease-in-out infinite; transform-origin: center; }

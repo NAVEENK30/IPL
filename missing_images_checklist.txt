@@ -1,0 +1,212 @@
+Here is the list of players who DO NOT have images yet.
+
+INSTRUCTIONS:
+1. Google the player's photo.
+2. Save the image as a .jpg file.
+3. The File Name must Match the Name BELOW EXACTLY.
+   Example: "Rinku Singh.jpg"
+4. Put them in: assets/Players/
+
+--- MISSING FROM TOP 50 (Download Failed) ---
+Rinku Singh
+Sai Sudharsan
+Tilak Varma
+Rajat Patidar
+David Warner
+Steve Smith
+Faf du Plessis
+Glen Phillips
+Heinrich Klaasen
+Liam Livingstone
+Anrich Nortje
+Lungi Ngidi
+
+--- REMAINING BATSMEN ---
+Jason Roy
+Finn Allen
+Devon Conway
+Rachin Ravindra
+Daryl Mitchell
+Travis Head
+Marnus Labuschagne
+Usman Khawaja
+Shimron Hetmyer
+Rovman Powell
+Sherfane Rutherford
+Brandon King
+Kyle Mayers
+Shai Hope
+Nicholas Pooran
+Evin Lewis
+Johnson Charles
+Rahmanullah Gurbaz
+Ibrahim Zadran
+Najibullah Zadran
+Babar Azam
+Fakhar Zaman
+Imam-ul-Haq
+Abdullah Shafique
+Saud Shakeel
+Pathum Nissanka
+Charith Asalanka
+Kusal Mendis
+Avishka Fernando
+Dimuth Karunaratne
+Mahmudullah
+Najmul Hossain Shanto
+Towhid Hridoy
+Litton Das
+Tamim Iqbal
+Soumya Sarkar
+Nitish Rana
+Rahul Tripathi
+Manish Pandey
+Ajinkya Rahane
+Mayank Agarwal
+Prithvi Shaw
+Devdutt Padikkal
+Abhishek Sharma
+Nehal Wadhera
+Sameer Rizvi
+Angkrish Raghuvanshi
+Ashutosh Sharma
+Abhinav Manohar
+Shahrukh Khan
+Sarfaraz Khan
+Yash Dhull
+Priyam Garg
+Riyan Parag
+Ayush Badoni
+Abdul Samad
+Anmolpreet Singh
+Mandeep Singh
+Karun Nair
+Cheteshwar Pujara
+
+--- REMAINING WICKETKEEPERS ---
+Kusal Perera
+Mohammad Rizwan
+Sarfaraz Ahmed
+Mushfiqur Rahim
+Sam Billings
+Ben Foakes
+Alex Carey
+Josh Inglis
+Matthew Wade
+Tim Seifert
+Tom Blundell
+Dinesh Karthik
+Wriddhiman Saha
+KS Bharat
+Jitesh Sharma
+Dhruv Jurel
+Prabhsimran Singh
+Anuj Rawat
+Vishnu Vinod
+Srikar Bharat
+Narayan Jagadeesan
+Upendra Yadav
+Kumar Kushagra
+Abishek Porel
+Robin Minz
+
+--- REMAINING ALL-ROUNDERS ---
+Sam Curran
+Moeen Ali
+Ben Stokes
+Chris Woakes
+Shakib Al Hasan
+Mehidy Hasan Miraz
+Wanindu Hasaranga
+Dasun Shanaka
+Angelo Mathews
+Dhananjaya de Silva
+Mohammad Nabi
+Rashid Khan
+Azmatullah Omarzai
+Gulbadin Naib
+Shadab Khan
+Imad Wasim
+Iftikhar Ahmed
+Faheem Ashraf
+Marco Jansen
+Aiden Markram
+Dwaine Pretorius
+Wiaan Mulder
+Andile Phehlukwayo
+Jason Holder
+Romario Shepherd
+Roston Chase
+Fabian Allen
+Odean Smith
+Krunal Pandya
+Washington Sundar
+Shardul Thakur
+Deepak Chahar
+Venkatesh Iyer
+Rahul Tewatia
+Shahbaz Ahmed
+Nitish Kumar Reddy
+Harpreet Brar
+Rishi Dhawan
+Lalit Yadav
+Swapnil Singh
+Ramandeep Singh
+Anukul Roy
+Karn Sharma
+
+--- REMAINING BOWLERS ---
+Mujeeb Ur Rahman
+Fazalhaq Farooqi
+Naveen-ul-Haq
+Noor Ahmad
+Shaheen Afridi
+Haris Rauf
+Naseem Shah
+Hasan Ali
+Maheesh Theekshana
+Matheesha Pathirana
+Dilshan Madushanka
+Dushmantha Chameera
+Lahiru Kumara
+Mustafizur Rahman
+Taskin Ahmed
+Shoriful Islam
+Hasan Mahmud
+Alzarri Joseph
+Kemar Roach
+Jayden Seales
+Obed McCoy
+Akeal Hosein
+Gudakesh Motie
+Reece Topley
+Mark Wood
+Adil Rashid
+Chris Jordan
+Tymal Mills
+Lockie Ferguson
+Matt Henry
+Ish Sodhi
+Arshdeep Singh
+Bhuvneshwar Kumar
+Ravichandran Ashwin
+Ishant Sharma
+Umesh Yadav
+Harshal Patel
+Avesh Khan
+Mukesh Kumar
+Prasidh Krishna
+Ravi Bishnoi
+Varun Chakaravarthy
+Rahul Chahar
+T. Natarajan
+Sandeep Sharma
+Mohit Sharma
+Khaleel Ahmed
+Chetan Sakariya
+Jaydev Unadkat
+Mayank Yadav
+Umran Malik
+Yash Dayal
+Akash Madhwal
+Simarjeet Singh
