@@ -1,0 +1,284 @@
+/* Base Price Box */
+.base-price {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--primary-color);
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 1.5rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    backdrop-filter: blur(5px);
+}
+
+/* Set Slide View Enhanced 3D modification */
+.set-slide-view {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 25;
+    background: radial-gradient(circle at center, rgba(30, 30, 30, 0.95) 0%, rgba(0, 0, 0, 1) 100%);
+    perspective: 1200px;
+    overflow: hidden;
+}
+
+.set-slide-view.active {
+    display: flex;
+}
+
+.set-slide-view::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(45deg, rgba(212, 175, 55, 0.05) 0, rgba(212, 175, 55, 0.05) 2px, transparent 2px, transparent 40px);
+    transform: translate(-50%, -50%) translateZ(-400px) rotateX(70deg);
+    animation: panGrid 20s linear infinite;
+    z-index: -1;
+}
+
+@keyframes panGrid {
+    0% {
+        transform: translate(-50%, -50%) translateZ(-400px) rotateX(70deg) translateY(0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translateZ(-400px) rotateX(70deg) translateY(100px);
+    }
+}
+
+.set-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(6rem, 12vw, 12rem);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: clamp(10px, 2vw, 25px);
+    padding: 30px 60px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    transform-style: preserve-3d;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(212, 175, 55, 0.2);
+    animation: setEntrance 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, setFloat 6s ease-in-out infinite alternate 1.5s;
+}
+
+.set-title::before {
+    content: '';
+    position: absolute;
+    inset: -5px;
+    border: 2px solid var(--primary-color);
+    border-radius: 14px;
+    transform: translateZ(-20px);
+    animation: setBorderPulse 2s infinite;
+}
+
+@keyframes setEntrance {
+    0% {
+        transform: scale(0) rotateX(90deg) translateZ(-500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1) rotateX(0deg) translateZ(50px);
+        opacity: 1;
+    }
+}
+
+@keyframes setFloat {
+    0% {
+        transform: translateZ(50px) translateY(0) rotateY(-5deg);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    }
+
+    100% {
+        transform: translateZ(100px) translateY(-20px) rotateY(5deg);
+        box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6), 0 0 40px rgba(212, 175, 55, 0.4);
+    }
+}
+
+@keyframes setBorderPulse {
+
+    0%,
+    100% {
+        transform: translateZ(-20px) scale(1);
+        opacity: 0.5;
+        border-color: rgba(212, 175, 55, 0.5);
+    }
+
+    50% {
+        transform: translateZ(-40px) scale(1.05);
+        opacity: 1;
+        border-color: rgba(212, 175, 55, 1);
+        box-shadow: 0 0 30px rgba(212, 175, 55, 0.8);
+    }
+}
+
+/* Removed old textGlowPulse due to redesign */
+
+/* --- New "Best Look" Animations --- */
+
+/* Player Info Animations */
+.player-info.active .slide-number {
+    animation: slideInLeft 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.player-info.active .player-name {
+    animation: slideInLeft 0.6s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.player-info.active .team-badge {
+    animation: popIn 0.5s 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.player-info.active .base-price {
+    animation: slideInUp 0.6s 0.4s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.player-info.active .star-rating {
+    animation: fadeIn 0.8s 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+/* Player Visual Animations */
+.player-visual.active .image-container {
+    animation: floatEntry 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+}
+
+.player-visual.active .visual-effect-ring {
+    animation: spin 10s linear infinite, ringPulse 2s ease-in-out infinite;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes floatEntry {
+    0% {
+        transform: translateY(100px) scale(0.8);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateY(-10px) scale(1.05);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes ringPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 10px var(--primary-color), inset 0 0 10px var(--primary-color);
+    }
+
+    50% {
+        box-shadow: 0 0 30px var(--primary-color), inset 0 0 30px var(--primary-color);
+    }
+}
+
+/* Category Animations Enhanced */
+.category-slide-view.active .main-cat-title {
+    animation: zoomIn 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.category-slide-view.active .sub-cat-title {
+    animation: slideInUp 0.8s 0.3s ease-out forwards;
+    opacity: 0;
+}
+
+.category-slide-view.active .cat-anim-container {
+    animation: popIn 0.8s 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    opacity: 0;
+}
+
+/* Star Rating Styles */
+.star-rating {
+    font-size: 2.5rem;
+    color: #FFD700;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    margin-top: 15px;
+    font-family: 'Segoe UI Emoji', sans-serif;
+    letter-spacing: 5px;
+}
+
+/* Flag Styles */
+.player-flag-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    animation: fadeIn 1s 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.player-flag-svg {
+    width: 80px;
+    height: auto;
+    display: block;
+}
