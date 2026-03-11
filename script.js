@@ -4,7 +4,7 @@
 
 const playersDB = {
     "Batsmen": [
-        { name: "Virat Kohli.png", role: "ANCHOR", price: "2 Crore", rating: 5.0, country: "India" },
+        { name: "Virat Kohli", role: "ANCHOR", price: "2 Crore", rating: 5.0, country: "India" },
         { name: "Rohit Sharma", role: "OPENER", price: "2 Crore", rating: 5.0, country: "India" },
         { name: "David Warner", role: "OPENER", price: "2 Crore", rating: 4.5, country: "Australia" },
         { name: "Kane Williamson", role: "ANCHOR", price: "2 Crore", rating: 4.1, country: "New Zealand" },
@@ -583,4 +583,5 @@ document.addEventListener('mousemove', (e) => {
         mainLayout.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
     }
 });
+
 
