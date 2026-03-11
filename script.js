@@ -583,5 +583,3 @@ document.addEventListener('mousemove', (e) => {
         mainLayout.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
     }
 });
-
-
