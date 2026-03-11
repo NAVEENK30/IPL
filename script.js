@@ -498,9 +498,9 @@ function renderSlide(index) {
             categoryBannerEl.textContent = data.category;
 
             // Enhanced Image Handling: Try PNG first (background-less), then JPG, then JPEG
-            const imgPathPng = `assets/Players/${data.name}.png`;
-            const imgPathJpg = `assets/Players/${data.name}.jpg`;
-            const imgPathJpeg = `assets/Players/${data.name}.jpeg`;
+            const imgPathPng = `${data.name}.png`;
+            const imgPathJpg = `${data.name}.jpg`;
+            const imgPathJpeg = `${data.name}.jpeg`;
 
             // Clear previous image state
             playerImageEl.src = '';
@@ -508,7 +508,7 @@ function renderSlide(index) {
 
             const tryLoadImage = (paths) => {
                 if (paths.length === 0) {
-                    playerImageEl.src = 'assets/cricket_player_silhouette.svg';
+                    playerImageEl.src = 'cricket_player_silhouette.svg';
                     playerImageEl.style.display = 'block';
                     return;
                 }
